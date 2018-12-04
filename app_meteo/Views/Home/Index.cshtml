@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Hoje";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">Hoje</h1>
+</div>
+<div class="container">
+    <div class="card-deck mb-3 text-center" id="cardContainer">
+        @Html.Partial("_Card")
+    </div>
+</div>

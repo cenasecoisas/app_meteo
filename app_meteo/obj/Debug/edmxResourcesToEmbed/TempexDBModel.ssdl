@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TempexDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'TempexDB.dbo.TempexTable' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="TempexTable">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" />
+    <Property Name="JSON" Type="nvarchar(max)" />
+    <Property Name="lastUpdate" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityContainer Name="TempexDBModelStoreContainer">
+    <EntitySet Name="TempexTable" EntityType="Self.TempexTable" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TempexTable].[ID] AS [ID], 
+    [TempexTable].[City] AS [City], 
+    [TempexTable].[JSON] AS [JSON], 
+    [TempexTable].[lastUpdate] AS [lastUpdate]
+    FROM [dbo].[TempexTable] AS [TempexTable]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

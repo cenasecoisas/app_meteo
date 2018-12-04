@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TempexDBModelStoreContainer" CdmEntityContainer="TempexDBEntities">
+    <EntitySetMapping Name="TempexTables">
+      <EntityTypeMapping TypeName="TempexDBModel.TempexTable">
+        <MappingFragment StoreEntitySet="TempexTable">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="JSON" ColumnName="JSON" />
+          <ScalarProperty Name="lastUpdate" ColumnName="lastUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

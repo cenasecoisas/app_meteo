@@ -1,0 +1,18 @@
+C:\Users\Joao Marques\source\repos\app_meteo\ServiceAPI\bin\Debug\ServiceAPI.exe.config
+C:\Users\Joao Marques\source\repos\app_meteo\ServiceAPI\bin\Debug\ServiceAPI.exe
+C:\Users\Joao Marques\source\repos\app_meteo\ServiceAPI\bin\Debug\ServiceAPI.pdb
+C:\Users\Joao Marques\source\repos\app_meteo\ServiceAPI\obj\Debug\ServiceAPI.csprojResolveAssemblyReference.cache
+C:\Users\Joao Marques\source\repos\app_meteo\ServiceAPI\obj\Debug\ServiceAPI.csproj.CoreCompileInputs.cache
+C:\Users\Joao Marques\source\repos\app_meteo\ServiceAPI\obj\Debug\ServiceAPI.exe
+C:\Users\Joao Marques\source\repos\app_meteo\ServiceAPI\obj\Debug\ServiceAPI.pdb
+C:\Users\Joao Marques\source\repos\app_meteo\ServiceAPI\obj\Debug\ServiceAPI.ProjectInstaller.resources
+C:\Users\Joao Marques\source\repos\app_meteo\ServiceAPI\obj\Debug\ServiceAPI.csproj.GenerateResource.cache
+C:\Users\Cenas\Desktop\app_meteo\ServiceAPI\bin\Debug\ServiceAPI.exe.config
+C:\Users\Cenas\Desktop\app_meteo\ServiceAPI\bin\Debug\ServiceAPI.exe
+C:\Users\Cenas\Desktop\app_meteo\ServiceAPI\bin\Debug\ServiceAPI.pdb
+C:\Users\Cenas\Desktop\app_meteo\ServiceAPI\obj\Debug\ServiceAPI.ProjectInstaller.resources
+C:\Users\Cenas\Desktop\app_meteo\ServiceAPI\obj\Debug\ServiceAPI.csproj.GenerateResource.cache
+C:\Users\Cenas\Desktop\app_meteo\ServiceAPI\obj\Debug\ServiceAPI.csproj.CoreCompileInputs.cache
+C:\Users\Cenas\Desktop\app_meteo\ServiceAPI\obj\Debug\ServiceAPI.exe
+C:\Users\Cenas\Desktop\app_meteo\ServiceAPI\obj\Debug\ServiceAPI.pdb
+C:\Users\Cenas\Desktop\app_meteo\ServiceAPI\obj\Debug\ServiceAPI.csprojAssemblyReference.cache
