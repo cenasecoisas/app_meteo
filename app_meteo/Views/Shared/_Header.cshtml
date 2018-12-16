@@ -1,22 +1,18 @@
 ﻿<header id="header">
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Tempex</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarsExample02">
+    <nav class="navbar navbar-expand navbar-dark">
+        <a class="mr-4 title">Tempex</a>
+        <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#Index">Diário<span class="sr-only">(current)</span></a>
+                <li class="nav-item weather">
+                    <a class="nav-link" href="/Home">Today Weather</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#cincoDias">5 dias</a>
+                <li class="nav-item forecast">
+                    <a class="nav-link" href="/Forecast">5 Days Forecast</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-md-0" id="searchForm">
                 <input class="form-control mr-sm-2" type="text" id="searchBox" placeholder="Find your location...">
-                <button type="button" onclick="returnCardForm()">Search</button>
+                <button class="btn" id="locationButton" type="submit">Search</button>
             </form>
         </div>
     </nav>

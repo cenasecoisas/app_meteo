@@ -6,6 +6,10 @@
     <title>@ViewBag.Title</title>
     <link href="~/Content/style.css" rel="stylesheet" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/Main.js"></script>
 </head>
 <body>
     @Html.Partial("_Header")
@@ -13,8 +17,5 @@
         @RenderBody()
     </section>
     @Html.Partial("_Footer")
-    <script src="~/Scripts/bootstrap.min.js"></script>
-    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
-    <script src="~/Scripts/Location.js"></script>
 </body>
 </html>

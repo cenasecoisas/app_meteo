@@ -17,8 +17,7 @@ namespace ApixuFunctionApp.Models
                 try
                 {
                     conn.Open();
-                    string sql = "UPDATE Location SET Country = @country, Lat = @lat, Lon = @lon " +
-                        "WHERE Name LIKE @name IF @@ROWCOUNT=0 " +
+                    string sql = "IF NOT EXISTS (SELECT * FROM Location WHERE Name LIKE @name)" +
                         "INSERT INTO Location (Name,Country,Lat,Lon) values (@name,@country,@lat,@lon)";
                     using (SqlCommand cmd = new SqlCommand(sql, conn))
                     {
@@ -32,13 +31,17 @@ namespace ApixuFunctionApp.Models
                     int count = 1;
                     foreach (var obj in rootObject.forecast.forecastday)
                     {
-                        sql = "UPDATE Day SET Maxtemp_c = @maxtemp_c, Mintemp_c = @mintemp_c, Avghumidity = @avghumidity, Text = @text, Icon = @icon, Code = @code, Date = @date " +
-                            "WHERE ID LIKE @id IF @@ROWCOUNT=0 " +
-                            "INSERT INTO Day (ID,Maxtemp_c,Mintemp_c,Avghumidity,Text,Icon,Code,Date) values(@id,@maxtemp_c,@mintemp_c,@avghumidity,@text,@icon,@code,@date)";
-                        string dayID = city + count;
+                        sql = "DECLARE @Location AS INT " +
+                            "SET @Location = (SELECT ID FROM Location WHERE Name LIKE @name) " +
+                            "UPDATE Day SET Maxtemp_c = @maxtemp_c, Mintemp_c = @mintemp_c, Avghumidity = @avghumidity, Text = @text, Icon = @icon, Code = @code, Date = @date " +
+                            "WHERE DayCode LIKE @daycode IF @@ROWCOUNT=0 " +
+                            "INSERT INTO Day (Location,DayCode,Maxtemp_c,Mintemp_c,Avghumidity,Text,Icon,Code,Date) " +
+                            "values(@Location,@daycode,@maxtemp_c,@mintemp_c,@avghumidity,@text,@icon,@code,@date)";
+                        string dayCode = city + count;
                         using (SqlCommand cmd = new SqlCommand(sql, conn))
                         {
-                            cmd.Parameters.AddWithValue("@id", dayID);
+                            cmd.Parameters.AddWithValue("@name", city);
+                            cmd.Parameters.AddWithValue("@daycode", dayCode);
                             cmd.Parameters.AddWithValue("@maxtemp_c", obj.day.maxtemp_c);
                             cmd.Parameters.AddWithValue("@mintemp_c", obj.day.mintemp_c);
                             cmd.Parameters.AddWithValue("@avghumidity", obj.day.avghumidity);

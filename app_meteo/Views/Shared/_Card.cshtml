@@ -1,16 +1,16 @@
 ﻿
 <div class="card mb-4 box-shadow col-4">
     <div class="card-header">
-        <h4 class="my-0 font-weight-normal">@ViewBag.City</h4>
+        <h4 class="my-0">@ViewBag.City</h4>
     </div>
     <div class="card-body">
         <img src="@ViewBag.Image" alt="icon" />
         <ul class="list-unstyled mt-3 mb-4">
+            <li class="maxTemp">Max: @ViewBag.Max</li>
+            <li class="minTemp">Min: @ViewBag.Min</li>
+            <li>Humidity: @ViewBag.Hum</li>
             <li>@ViewBag.Condition</li>
-            <li>Max: @ViewBag.Max</li>
-            <li>Min: @ViewBag.Min</li>
-            <li>Humidade: @ViewBag.Hum</li>
         </ul>
-        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Remover</button>
+        <button type="button" class="remover btn btn-lg btn-block btn-outline-primary">Remover</button>
     </div>
 </div>

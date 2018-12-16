@@ -169,8 +169,8 @@ C:\Users\Cenas\Desktop\app_meteo\app_meteo\bin\System.Web.Razor.xml
 C:\Users\Cenas\Desktop\app_meteo\app_meteo\bin\System.Web.WebPages.xml
 C:\Users\Cenas\Desktop\app_meteo\app_meteo\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Cenas\Desktop\app_meteo\app_meteo\bin\System.Web.WebPages.Razor.xml
-C:\Users\Cenas\Desktop\app_meteo\app_meteo\obj\Debug\Tempex.csprojAssemblyReference.cache
 C:\Users\Cenas\Desktop\app_meteo\app_meteo\obj\Debug\Tempex.csproj.CoreCompileInputs.cache
 C:\Users\Cenas\Desktop\app_meteo\app_meteo\obj\Debug\Tempex.csproj.CopyComplete
 C:\Users\Cenas\Desktop\app_meteo\app_meteo\obj\Debug\Tempex.dll
 C:\Users\Cenas\Desktop\app_meteo\app_meteo\obj\Debug\Tempex.pdb
+C:\Users\Cenas\Desktop\app_meteo\app_meteo\obj\Debug\Tempex.csprojAssemblyReference.cache

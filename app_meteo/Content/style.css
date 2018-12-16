@@ -9,23 +9,66 @@
     top: 0;
     right: 0;
     z-index: 997;
-    background: #343b40;
+    background: #0E4D92;
 }
 
 #footer {
-  background: #343b40;
-  padding: 30px 0;
-  color: #fff;
-  font-size: 14px;
+    background: #0E4D92;
+    padding: 30px 0;
+    color: #fff;
+    font-size: 14px;
 }
 
 #footer .copyright {
-  text-align: center;
+    text-align: center;
 }
 
 #footer .credits {
-  padding-top: 10px;
-  text-align: center;
-  font-size: 13px;
-  color: #ccc;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #ccc;
+ }
+
+.title {
+    color: #F5F5F5 !important;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 6px;
+}
+
+body {
+    background-color: #F5F5F5 !important;
+}
+
+.card {
+    background-color: #0E4D92 !important;
+}
+
+.card-header {
+    color: #F5F5F5;
+}
+
+.card-body {
+    background-color: #F5F5F5 !important;
+    font-size: 18px;
+}
+
+.maxTemp{
+    color: darkorange;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.minTemp{
+    color: cornflowerblue;
+}
+
+.navbar-nav {
+    color: #F5F5F5 !important
+}
+
+.btn-outline-primary {
+    border-color: #0E4D92 !important;
+    color: #0E4D92 !important;
 }

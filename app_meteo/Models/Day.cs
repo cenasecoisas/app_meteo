@@ -13,5 +13,6 @@ namespace Tempex.Models
         public string text { get; set; }
         public string icon { get; set; }
         public int code { get; set; }
+        public DateTime date { get; set; }
     }
 }
